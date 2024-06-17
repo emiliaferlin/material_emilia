@@ -1,4 +1,6 @@
 import 'package:desigmili/src/font/componentes_teste.dart';
+import 'package:desigmili/src/selects/button_select.dart';
+import 'package:desigmili/src/selects/line_select.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +31,12 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Ola"),
         ),
-        body: Column(),
+        body: Column(
+          children: const [
+            SelectButton(),
+            SelectLine(),
+          ],
+        ),
       ),
     );
   }
